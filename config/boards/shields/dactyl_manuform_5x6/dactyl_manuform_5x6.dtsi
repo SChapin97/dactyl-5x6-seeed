@@ -42,13 +42,5 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
             <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.03 for row 3
             <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.04 for row 4
             <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;   // Use P0.05 for row 5
-
-        col-gpios =
-            <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.06 for column 0
-            <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.07 for column 1
-            <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)G>,   // Use P0.08 for column 2
-            <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.09 (NFC1) for column 3
-            <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,  // Use P0.10 (NFC2) for column 4
-            <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;  // Use P0.11 for column 5
     };
 };

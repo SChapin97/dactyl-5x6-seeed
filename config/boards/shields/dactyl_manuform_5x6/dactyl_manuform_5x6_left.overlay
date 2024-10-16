@@ -1,11 +1,12 @@
 #include "dactyl_manuform_5x6.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &kscan0 {
-    col-gpios =
-        <&gpio0 0 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.00 for row 0
-        <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.01 for row 1
-        <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.02 for row 2
-        <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.03 for row 3
-        <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>,   // Use P0.04 for row 4
-        <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_DOWN)>;   // Use P0.05 for row 5
+    col-gpios
+        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        , <&gpio0 9 GPIO_ACTIVE_HIGH>
+        ;
 };
